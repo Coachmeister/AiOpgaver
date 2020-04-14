@@ -1,4 +1,4 @@
-#!F:\Development\AI-exercises\Week-18\Scripts\python.exe
+#!F:\Development\AI-exercises\Week_17\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip3.8'
 __requires__ = 'pip==19.0.3'
 import re

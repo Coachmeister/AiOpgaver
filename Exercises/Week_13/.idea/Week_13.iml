@@ -4,5 +4,12 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Exercises-week10" />
+    <orderEntry type="module" module-name="Week-14" />
+    <orderEntry type="module" module-name="Week-15" />
+    <orderEntry type="module" module-name="Week-17" />
+    <orderEntry type="module" module-name="Week-18" />
+    <orderEntry type="module" module-name="Exercises-week9" />
+    <orderEntry type="module" module-name="Exercises-week8" />
   </component>
 </module>

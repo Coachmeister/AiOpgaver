@@ -1,4 +1,4 @@
-#!F:\Development\AI-exercises\Week-15\Scripts\python.exe
+#!F:\Development\AI-exercises\Week_15\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==40.8.0','console_scripts','easy_install'
 __requires__ = 'setuptools==40.8.0'
 import re
