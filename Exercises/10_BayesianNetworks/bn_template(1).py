@@ -355,34 +355,31 @@ def print_marginal_probabilities(network):
 
 
 def car_check():
+    # the values kept as dictionary
     # damaged tire
     t1 = {(): (0.3, 0.7)}
-
     # electronics malfunctioning
-    t2 = {(): (0.3, 0.7)}
-
+    t2 = {(): (0.2, 0.8)}
     # fuel tank leaking
-    t3 = {(): (0.2, 0.8)}
-
+    t3 = {(): (0.3, 0.7)}
     # vibrations
-    t4 = {('false',): (0.3, 0.7), ('true',): (0.7, 0.1)}
-
+    t4 = {('false',): (0.1, 0.9),
+          ('true',): (0.7, 0.3)}
     # slow max speed
     t5 = {('false', 'false'): (0.3, 0.7),
-          ('true', 'false'): (0.6, 0.7),
+          ('true', 'false'): (0.6, 0.4),
           ('false', 'true'): (0.3, 0.7),
-          ('true', 'true'): (0.05, 0.3)
+          ('true', 'true'): (0.05, 0.95)
           }
-
     # high consumption
-    t6 = {('false', 'false', 'false'): (0.01, 0.7),
-          ('false', 'false', 'true'): (0.1, 0.7),
-          ('false', 'true', 'false'): (0.5, 0.7),
-          ('false', 'true', 'true'): (0.6, 0.7),
-          ('true', 'false', 'false'): (0.2, 0.7),
+    t6 = {('false', 'false', 'false'): (0.01, 0.99),
+          ('false', 'false', 'true'): (0.1, 0.9),
+          ('false', 'true', 'false'): (0.5, 0.5),
+          ('false', 'true', 'true'): (0.6, 0.4),
+          ('true', 'false', 'false'): (0.2, 0.8),
           ('true', 'false', 'true'): (0.3, 0.7),
-          ('true', 'true', 'false'): (0.8, 0.7),
-          ('true', 'true', 'true'): (0.9, 0.7),
+          ('true', 'true', 'false'): (0.8, 0.2),
+          ('true', 'true', 'true'): (0.9, 0.1),
           }
 
     # creation of Nodes objects
@@ -418,8 +415,9 @@ def car_check():
 
     print('')
 
-    conditionals_vars = {'Vibrations': 'true'}
-    conditionals_evidents = {'Slow max speed': 'true'}
+
+    conditionals_evidents = {'High consumption': 'true'}
+    conditionals_vars = {'Fuel tank leaking': 'true'}
 
     print_conditional_probability(network, conditionals_vars, conditionals_evidents)
 
